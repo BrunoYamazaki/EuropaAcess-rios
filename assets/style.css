@@ -5,17 +5,14 @@
     height: auto;
 }
 
-body {
-    background-image: linear-gradient(to right, #ff0000 0%, #ffe600 100%);
-}
-
 .container-fluid {
     padding: 7% 15% 3%;
 }
 
-.btn {
-    margin-top: 4rem;
+section {
+    padding: 80px 0;
 }
+
 /* nav */
 
 .navbar {
@@ -24,7 +21,11 @@ body {
     font-weight: 700;
 }
 
-/* PAGE CONTENT */
+/* PAGE CONTENT 1 */
+
+#title {
+    background-image: linear-gradient(to right, #ff0000 0%, #ffe600 100%);
+}
 
 h1, h2 {
     padding-top: 7%;
@@ -40,3 +41,91 @@ h2 {
     padding: 0%;
     font-size: 1.5rem;
 }
+
+.btn {
+    margin-top: 4rem;
+}
+
+
+/*section cards */
+
+#cards {
+    background: radial-gradient(circle, rgba(255,196,0,1) 0%, rgba(255,0,0,1) 100%);
+}
+
+.card {
+    border: none;
+    outline: none;
+    background-color: #fff;
+    border-radius: 20px;
+    transition: transform .3s;
+}
+
+/* CARD ANIMATION */
+
+
+.card:hover {
+    transform: translateY(-15px);
+    transition: transform .3s;
+}
+
+/* CARD ANIMATION END */
+
+
+
+img {
+    border-radius: 20px;
+    width: 340px;
+}
+
+/*section cards end */
+
+
+
+
+
+/* QUERY */
+
+@media (max-width:535px) {
+
+    .btn:last-child {
+        margin-top: 1rem;
+    }
+
+    h1 {
+        font-size: 34px;
+        line-height: 1;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+}
+
+/*need change this */ 
+
+@media (max-width:1200px) {
+    img {
+        width: 200px;
+    }
+}
+
+@media (max-width:767px) {
+    img {
+        width: 400px;
+    }
+}
+
+@media (max-width:460px) {
+    img {
+        width: 250px;
+    }
+}
+
+@media (max-width:300px) {
+    img {
+        width: 150px;
+    }
+}
+
+
